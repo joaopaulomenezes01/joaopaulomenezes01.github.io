@@ -169,3 +169,14 @@ html {
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
+.overlay a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #38bdf8;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+  color: white;
+}
