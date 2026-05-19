@@ -7,201 +7,278 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <canvas id="particles"></canvas>
 <div id="cursor"></div>
+
 <body>
 
 <!-- NAV -->
 <nav>
   <h2>JP Dev</h2>
-
   <div class="links">
     <a href="#sobre">Sobre</a>
+    <a href="#competencias">Competências</a>
     <a href="#projetos">Projetos</a>
+    <a href="#certificacoes">Certificações</a>
     <a href="#contato">Contato</a>
   </div>
-
   <div class="social">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-5889a830a/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/joaopaulomenezes01"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-5889a830a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/joaopaulomenezes01" target="_blank"><i class="fab fa-github"></i></a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1 id = "typing"></h1>
-  <p>Desenvolvedor em formação</p>
-  <button onclick="scrollToSection()">Ver Projetos</button>
+  <p class="hero-badge">Estagiário em TI • Suporte Técnico</p>
+  <h1 id="typing"></h1>
+  <p>Estudante de Análise e Desenvolvimento de Sistemas — IFPE</p>
+  <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Olinda, Pernambuco</p>
+  <button class="hero-btn" onclick="scrollToSection()">Ver Projetos</button>
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
 </section>
 
 <!-- SOBRE -->
 <section id="sobre" class="section">
   <h2>Sobre Mim</h2>
-
   <p>
-    Sou Estudante do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFPE.
-    Possuo habilidade prática nas linguagens Python e Java e venho adquirindo conhecimentos em JavaScript, HTML e CSS.
+    Estudante do curso de Tecnologia em Análise e Desenvolvimento de Sistemas no IFPE, com foco em
+    suporte técnico, infraestrutura de redes e segurança da informação. Proativo, ético e com boa comunicação,
+    busco minha primeira oportunidade para aplicar o conhecimento adquirido em cursos e projetos práticos.
   </p>
-
   <p>
-    Atualmente tenho criado projetos acadêmicos específicos na área de desenvolvimento backend e venho me aprofundando
-    no uso de interface gráfica por meio do Java Swing do Java e no Banco de dados utilizando o SpringBoot no MySQL,
-    tendo todos os projetos documentados e constantemente aprimorados nos repositórios do GitHub.
+    Tenho experiência prática com Python e Java, e venho adquirindo conhecimentos em JavaScript, HTML e CSS.
+    Atualmente desenvolvo projetos acadêmicos em backend, Java Swing e banco de dados com MySQL e SpringBoot,
+    todos documentados no GitHub.
   </p>
+  <div class="sobre-grid">
+    <div class="info-card">
+      <h4>Formação</h4>
+      <p><strong>Tecnólogo — Análise e Desenvolvimento de Sistemas</strong></p>
+      <p>IFPE – Campus Paulista</p>
+      <p>Out 2024 → Dez 2027</p>
+    </div>
+    <div class="info-card">
+      <h4>Idiomas</h4>
+      <ul>
+        <li>🇧🇷 Português — Nativo</li>
+        <li>🇺🇸 Inglês — Básico (A1 certificado)</li>
+        <li>🇪🇸 Espanhol — Básico</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h4>Softwares</h4>
+      <ul>
+        <li>Software de Gestão</li>
+        <li>Software de Documentos</li>
+        <li>Excel / Planilhas</li>
+        <li>Software de Comunicação</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h4>Habilidades Comportamentais</h4>
+      <ul>
+        <li>Proatividade</li>
+        <li>Comunicação Ética</li>
+        <li>Inteligência Emocional</li>
+        <li>Organização & Autoconfiança</li>
+        <li>Capacidade de Adaptação</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <p>
-    Tenho por objetivo atuar na área de tecnologia da informação, com foco em desenvolvimento de sistemas, redes e
-    segurança da informação, com possibilidade de suporte em TI, contribuindo para o crescimento da organização e
-    ampliando minha experiência profissional.
-  </p>
-
-  <p><strong>Aluno:</strong> O Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco - (IFPE - Campus Paulista)</p>
-  <p><strong>Curso:</strong> Tecnólogo - Análise e Desenvolvimento de Sistemas</p>
-  <p><strong>Período de Conclusão:</strong> Out 2024 - Dez 2027</p>
-
-  <div class="extras">
-    <h3>Cursos Extracurriculares</h3>
-    <ul>
-      <li>(ELETRÔNICA: TÉCNICAS DIGITAIS) SestSenat - Ano de conclusão 2026</li>
-      <li>(LEI GERAL DE PROTEÇÃO DE DADOS - LGPD) SestSenat Ano de conclusão 2026</li>
-      <li>(INTRODUÇÃO AO LÍNUX) Portal Network Development Group - Ano de conclusão 2025</li>
-      <li>(INTEGRIDADE, GESTÃO DE RISCOS E CONTROLE EM EMPRESAS ESTATAIS) Escola Nacional de Administração Pública - Enap - Ano de conclusão 2025</li>
-      <li>(SEGURANÇA DE REDE) Cisco Networking Academy - Ano de conclusão 2025</li>
-      <li>(AMEAÇAS, E VULNERABILIDADES ATAQUES À SEGURANÇA CIBERNÉTICA) Cisco Networking Academy - Ano de conclusão 2025</li>
-      <li>(SUPORTE DE REDE) Cisco Networking Academy - Ano de conclusão 2025</li>
-    </ul>
+<!-- COMPETÊNCIAS TÉCNICAS -->
+<section id="competencias" class="section">
+  <h2>Competências Técnicas</h2>
+  <div class="comp-grid">
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Suporte técnico básico a usuários</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Instalação e configuração de softwares</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Manutenção básica de desktops</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Noções de rede e conectividade</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Linux básico</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Conceitos de backup e recuperação</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Diagnóstico básico de sistemas</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Implementação de rotinas de backup</div>
+    <div class="comp-item"><i class="fas fa-check-circle"></i> Aplicação de atualizações de ambiente</div>
   </div>
 </section>
 
 <!-- PROJETOS -->
-<section id="projetos" class="section projetos">
+<section id="projetos" class="section">
   <h2>Projetos</h2>
-
   <div class="cards">
 
-    <div class="cards">
-
-  <!-- PROJETO 1 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/300?1">
-
-    <div class="overlay">
-      <div>
-        <h3>Sistema de Agendamento</h3>
-        <p>Aplicação com Python, MySQL e envio de e-mails.</p>
-
-        <div style="margin-top:10px;">
-          <a href="#" target="_blank">🔗 Ver Projeto</a><br>
+    <div class="card">
+      <span class="proj-tag">Python · MySQL</span>
+      <img src="https://picsum.photos/400/300?1" alt="Sistema de Agendamento">
+      <div class="overlay">
+        <div>
+          <h3>Sistema de Agendamento</h3>
+          <p>Aplicação com Python, MySQL e envio de e-mails automatizado.</p>
+          <a href="#" target="_blank">🔗 Ver Projeto</a>
           <a href="https://github.com/joaopaulomenezes01" target="_blank">💻 Código</a>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- PROJETO 2 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/300?2">
-
-    <div class="overlay">
-      <div>
-        <h3>Portfólio Web</h3>
-        <p>Site pessoal com HTML, CSS e JavaScript animado.</p>
-
-        <div style="margin-top:10px;">
-          <a href="#" target="_blank">🔗 Ver Projeto</a><br>
+    <div class="card">
+      <span class="proj-tag">HTML · CSS · JS</span>
+      <img src="https://picsum.photos/400/300?2" alt="Portfólio Web">
+      <div class="overlay">
+        <div>
+          <h3>Portfólio Web</h3>
+          <p>Site pessoal com animações, partículas e efeitos interativos.</p>
+          <a href="#" target="_blank">🔗 Ver Projeto</a>
           <a href="https://github.com/joaopaulomenezes01" target="_blank">💻 Código</a>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- PROJETO 3 -->
-  <div class="card">
-    <img src="https://picsum.photos/400/300?3">
-
-    <div class="overlay">
-      <div>
-        <h3>Sistema em Java</h3>
-        <p>Projeto com Java Swing e integração com banco de dados.</p>
-
-        <div style="margin-top:10px;">
-          <a href="#" target="_blank">🔗 Ver Projeto</a><br>
+    <div class="card">
+      <span class="proj-tag">Java · MySQL</span>
+      <img src="https://picsum.photos/400/300?3" alt="Sistema Java">
+      <div class="overlay">
+        <div>
+          <h3>Sistema em Java</h3>
+          <p>Java Swing com integração a banco de dados MySQL via JDBC.</p>
+          <a href="#" target="_blank">🔗 Ver Projeto</a>
           <a href="https://github.com/joaopaulomenezes01" target="_blank">💻 Código</a>
         </div>
       </div>
     </div>
-  </div>
 
-</div>
+    <div class="card">
+      <span class="proj-tag">HTML · CSS · JS</span>
+      <img src="https://picsum.photos/400/300?4" alt="Sistema Petshop">
+      <div class="overlay">
+        <div>
+          <h3>Sistema Petshop</h3>
+          <p>Aplicação web com carrinho, catálogo de produtos e serviços.</p>
+          <a href="#" target="_blank">🔗 Ver Projeto</a>
+          <a href="https://github.com/joaopaulomenezes01" target="_blank">💻 Código</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- CERTIFICAÇÕES -->
+<section id="certificacoes" class="section">
+  <h2>Certificações</h2>
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <p class="cert-org">Cisco Networking Academy / IFPE</p>
+      <h4>Introdução à IA Moderna</h4>
+      <p class="cert-meta">Conclusão: 12 Mai 2026 • ID: 4888fb7d</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">SEST SENAT</p>
+      <h4>Inglês Básico para Atendimento ao Público – A1</h4>
+      <p class="cert-meta">20h • Jun 2025 • Brasília, 11/03/2026</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">ENAP</p>
+      <h4>Storytelling com Dados para Comunicação Profissional</h4>
+      <p class="cert-meta">25h • Abr 2025 • Nota final: 81,25</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">ENAP</p>
+      <h4>Integridade, Gestão de Riscos e Controle em Empresas Estatais</h4>
+      <p class="cert-meta">30h • Jul–Ago 2025 • Nota final: 70</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">ENAP</p>
+      <h4>Como Conseguir um Novo Emprego</h4>
+      <p class="cert-meta">6h • Mai 2025 • Nota final: 85</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">Cisco Networking Academy</p>
+      <h4>Segurança de Rede</h4>
+      <p class="cert-meta">Conclusão: 2025</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">Cisco Networking Academy</p>
+      <h4>Ameaças, Vulnerabilidades e Ataques à Segurança Cibernética</h4>
+      <p class="cert-meta">Conclusão: 2025</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">NDG / Portal Network</p>
+      <h4>Introdução ao Linux</h4>
+      <p class="cert-meta">Conclusão: 2025</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">SEST SENAT</p>
+      <h4>Eletrônica: Técnicas Digitais</h4>
+      <p class="cert-meta">Conclusão: 2026</p>
+    </div>
+
+    <div class="cert-card">
+      <p class="cert-org">SEST SENAT</p>
+      <h4>Lei Geral de Proteção de Dados – LGPD</h4>
+      <p class="cert-meta">Conclusão: 2026</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TECNOLOGIAS -->
 <section class="section tech">
   <h2>Tecnologias</h2>
-
   <div class="tech-icons">
-
-    <div>
-      <i class="devicon-python-plain colored"></i>
-      <p>Python</p>
-    </div>
-
-    <div>
-      <i class="devicon-java-plain colored"></i>
-      <p>Java</p>
-    </div>
-
-    <div>
-      <i class="devicon-javascript-plain colored"></i>
-      <p>JavaScript</p>
-    </div>
-
-    <div>
-      <i class="devicon-html5-plain colored"></i>
-      <p>HTML</p>
-    </div>
-
-    <div>
-      <i class="devicon-css3-plain colored"></i>
-      <p>CSS</p>
-    </div>
-
-    <div>
-      <i class="devicon-mysql-plain colored"></i>
-      <p>MySQL</p>
-    </div>
-
+    <div><i class="devicon-python-plain colored"></i><p>Python</p></div>
+    <div><i class="devicon-java-plain colored"></i><p>Java</p></div>
+    <div><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+    <div><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+    <div><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+    <div><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+    <div><i class="devicon-spring-plain colored"></i><p>Spring</p></div>
+    <div><i class="devicon-linux-plain"></i><p>Linux</p></div>
   </div>
 </section>
 
 <!-- CONTATO -->
-<section id="contato" class="section contato">
-  <h2>Contato:</h2>
-
+<section id="contato" class="section">
+  <h2>Contato</h2>
   <div class="links-contato">
-
     <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-5889a830a/" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
+      <i class="fab fa-linkedin"></i> linkedin.com/in/joao-paulo-5889a830a
     </a>
-
     <a href="https://github.com/joaopaulomenezes01" target="_blank">
-      <i class="fab fa-github"></i> GitHub
+      <i class="fab fa-github"></i> github.com/joaopaulomenezes01
     </a>
-
     <a href="mailto:joaomatosreserva@gmail.com">
-      <i class="fas fa-envelope"></i> Email
+      <i class="fas fa-envelope"></i> joaomatosreserva@gmail.com
     </a>
-
     <span>
       <i class="fas fa-phone"></i> (81) 99988-9852
     </span>
-
+    <span>
+      <i class="fas fa-map-marker-alt"></i> Olinda, Pernambuco — Brasil
+    </span>
   </div>
 </section>
+
+<footer>
+  <p>Feito por João Paulo de Menezes Matos · 2026</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

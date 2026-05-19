@@ -14,48 +14,124 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 16px 36px;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
 }
 
 .links, .social {
   display: flex;
-  gap: 20px;
+  gap: 24px;
+  align-items: center;
 }
 
-a {
+nav a {
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #38bdf8;
+}
+
+nav .links a {
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+nav .links a:hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+nav .social a:hover {
+  transform: translateY(-2px);
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 96px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+}
+
+.hero p,
+.hero .hero-location {
+  margin-top: 16px;
+  color: #cbd5e1;
+}
+
+.hero-badge {
+  margin-bottom: 18px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.14);
+  letter-spacing: 0.05em;
 }
 
 .hero h1 {
   font-size: 3rem;
+  margin-top: 0.4rem;
+}
+
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 28px;
+  padding: 12px 26px;
   border: none;
+  border-radius: 999px;
   background: #38bdf8;
+  color: #0f172a;
+  font-weight: 700;
   cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #22c55e;
 }
 
 /* SECTIONS */
 .section {
   padding: 100px 50px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.section p,
+.section li {
+  line-height: 1.8;
+}
+
+.sobre-grid,
+.comp-grid,
+.cert-grid,
+.tech-icons {
+  gap: 24px;
 }
 
 /* CARDS */
