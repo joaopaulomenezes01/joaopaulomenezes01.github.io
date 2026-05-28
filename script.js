@@ -1,6 +1,4 @@
-// =====================
-// SCROLL SUAVE
-// =====================
+
 function scrollToSection() {
   document.getElementById("projetos").scrollIntoView({ behavior: "smooth" });
 }
@@ -87,9 +85,7 @@ function animate() {
 
 animate();
 
-// =====================
-// 3D CARD TILT
-// =====================
+
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
@@ -109,9 +105,7 @@ cards.forEach(card => {
   });
 });
 
-// =====================
-// CURSOR PERSONALIZADO
-// =====================
+
 const cursor = document.getElementById("cursor");
 
 document.addEventListener("mousemove", e => {
@@ -119,9 +113,7 @@ document.addEventListener("mousemove", e => {
   cursor.style.top  = e.clientY + "px";
 });
 
-// =====================
-// NOTIFICAÇÃO (estilo Petshop)
-// =====================
+
 function showNotif(msg) {
   const n = document.createElement("div");
   n.className = "notif";
